@@ -1,0 +1,399 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" Debug="true" MasterPageFile="" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+   
+    <style type="text/css">
+        .style1
+        {
+            width: 935px;
+            height: 103px;
+            margin-bottom: 0px;
+        }
+        .style3
+        {
+            width: 368px;
+            height:55px
+        }
+        .style5
+        {
+            width: 100%;
+            height: 101px;
+        }
+        .style6
+        {
+            height: 87px;
+            width: 183px;
+        }
+        .style7
+        {
+            height: 80px;
+            width: 183px;
+        }
+        .style8
+        {
+            height: 36px;
+            width: 183px;
+        }
+        .style9
+        {
+            width: 100%;
+            border: 2px solid #FF0000;
+        }
+        #Text1
+        {
+            width: 535px;
+        }
+        .style10
+        {
+            width: 672px;
+            height: 55px;
+        }
+       
+        .style12
+        {
+            height: 510px;
+            width: 1%;
+        }
+       
+        .style13
+        {
+            width: 60px;
+            height: 32px;
+        }
+       
+        .style14
+        {
+            width: 183px;
+        }
+       
+        .style15
+        {
+            height: 510px;
+            width: 13%;
+        }
+       
+        .style17
+        {
+            width: 368px;
+        }
+       
+        </style>
+   
+</head>
+<body>
+    <form id="form1" runat="server" style="font-size: medium; color: #000000">
+    <table border="0" cellpadding="0" style="width:100%; height:600px; margin-bottom:0px; margin-left:0px; margin-top:0PX;">
+    <tr>
+
+    <td colspan="3" style="height :100px; background-image: url('images/header.jpg'); " 
+            align="left" valign="top" bgcolor="#990000">
+        
+        
+        &nbsp;</td>
+    </tr>
+    <tr style="width:100%; height:16px; background-color:Silver;">
+    <td bgcolor="#993333"></td>
+    <td colspan="3" style="height:30px;">
+        <table class="style1">
+            <tr>
+                <td class="style3" align="left" valign="top" bgcolor="#993333">
+                    <asp:Image ID="Image3" runat="server" ImageUrl="~/images/disco_anim_bf16.gif" 
+                        Width="176px" BorderColor="#0080FF" Height="97px" ForeColor="#996633" />
+                </td>
+                <td bgcolor="#993333" class="style10">
+                    <asp:Image ID="Image4" runat="server" Height="72px" 
+                        ImageUrl="~/images/cooltext420009464.gif" Width="707px" />
+                       
+                       
+                    <asp:Menu ID="Menu1" runat="server" Font-Bold="True" Orientation="Horizontal" 
+                        StaticSubMenuIndent="10px" Height="16px" 
+                        onmenuitemclick="Menu1_MenuItemClick" BackColor="#F7F6F3" 
+                        DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="0.8em" 
+                        ForeColor="#7C6F57">
+                        <DynamicHoverStyle BackColor="#7C6F57" ForeColor="White" />
+                        <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                        <DynamicMenuStyle BackColor="#F7F6F3" />
+                        <DynamicSelectedStyle BackColor="#5D7B9D" />
+                        <Items>
+                            <asp:MenuItem Text="Home" ToolTip="Home" Value="Home" NavigateUrl="~/home.aspx">
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="| About Us" ToolTip="About US" Value="| About Us" 
+                                NavigateUrl="~/About us.aspx">
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="| Contact Us" ToolTip="Contact Us" Value="| Contact Us" 
+                                NavigateUrl="~/contactus.aspx">
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="| Administrator" ToolTip="Administrator" 
+                                Value="| Administrator" NavigateUrl="~/Alogin.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="| Operator" ToolTip="Operator" Value="| Operator" 
+                                NavigateUrl="~/Ologin.aspx">
+                            </asp:MenuItem>
+                            <asp:MenuItem></asp:MenuItem>
+                            <asp:MenuItem></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/feedback.aspx" Text="| FeedBack" 
+                                ToolTip="FeedBack" Value="| FeedBack"></asp:MenuItem>
+                        </Items>
+                        <StaticHoverStyle BackColor="#7C6F57" ForeColor="White" />
+                        <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                        <StaticSelectedStyle BackColor="#5D7B9D" />
+                    </asp:Menu>
+                </td>
+                
+ 
+               
+            </tr>
+      
+          </table>
+         
+        </td>
+        
+    </tr>
+    <tr style="width:50px; height:546px; background-color:Silver;">
+    <td align="left" valign="top" bgcolor="#CCFFCC" class="style12">
+        <br />
+        <table cellpadding="4" class="style9">
+        <tr>
+        <td bgcolor="#666666">
+        <%--<td bgcolor="#FF8080" class="style13">--%>
+                   <asp:Image ID="Image5" runat="server" Height="36px" 
+                        ImageUrl="~/images/12345.bmp" Width="166px" BackColor="Maroon" 
+                BorderColor="#CC0000" BorderStyle="Outset" BorderWidth="12px" 
+                ForeColor="#009999" />
+               
+        </td> 
+        </tr>
+            
+                
+            
+            <tr>
+                <td class="style13" bgcolor="#FFCCFF">
+                    <asp:LinkButton ID="LinkButton1" runat="server" BorderStyle="Outset" 
+                        Font-Bold="True" Font-Italic="False" ForeColor="#CC0000" 
+                        PostBackUrl="~/home.aspx" Width="155px" Height="38px" BackColor="#FFCCFF" 
+                        BorderColor="#990000" BorderWidth="12px" Font-Names="Arial Black" 
+                        Font-Size="Large" Font-Underline="False" onclick="LinkButton1_Click"> 
+                    Home</asp:LinkButton>
+                    &nbsp; &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style13" bgcolor="#CCFFCC">
+                    <asp:LinkButton ID="LinkButton2" runat="server" BorderStyle="Outset" 
+                        Font-Bold="True" Font-Italic="True" ForeColor="#CC0000"  Width="150px" 
+                        onclick="LinkButton3_Click" BackColor="#FF99FF" 
+                        PostBackUrl="~/Ulogin.aspx" BorderColor="#990000" BorderWidth="12px" 
+                        Font-Names="Arial Black" Font-Size="Large" Font-Underline="False">Ulogin</asp:LinkButton>
+                    &nbsp;</td>
+            </tr>
+            <tr><td class="style13" bgcolor="#FFCCFF">
+                    <asp:LinkButton ID="LinkButton14" runat="server" BorderStyle="Outset" 
+                        Font-Bold="True" Font-Italic="True" ForeColor="#CC0000"  Width="150px" 
+                        onclick="LinkButton3_Click" BackColor="#FF99FF" 
+                        PostBackUrl="~/Alogin.aspx" BorderColor="#990000" BorderWidth="12px" 
+                        Font-Names="Arial Black" Font-Size="Large" Font-Underline="True">ALogin 
+                    </asp:LinkButton>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style13" bgcolor="#CCFFCC">
+                    <asp:LinkButton ID="LinkButton3" runat="server" BorderStyle="Outset" 
+                        Font-Bold="True" Font-Italic="False" ForeColor="#CC0000"  Width="150px" 
+                        onclick="LinkButton3_Click" BackColor="#FFCCFF" 
+                        PostBackUrl="~/Admitcard_log.aspx" BorderColor="#CC0000" 
+                        BorderWidth="12px" Font-Names="Arial Black" Font-Size="Large" 
+                        Font-Underline="False">Admit 
+                    Card</asp:LinkButton>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style13" bgcolor="#FFCCFF">
+                    <asp:LinkButton ID="LinkButton4" runat="server" BorderStyle="Outset" 
+                        Font-Bold="True" Font-Italic="True" ForeColor="#CC0000" Width="150px" 
+                        PostBackUrl="~/TakeExamLog.aspx" BackColor="#FFCCFF" BorderWidth="12px" 
+                        Font-Names="Arial Black" Font-Size="Large" Font-Underline="False" 
+                        BorderColor="#990000">Take 
+                    Exam</asp:LinkButton>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style13" bgcolor="#CCFFCC">
+                    <asp:LinkButton ID="LinkButton5" runat="server" BorderStyle="Outset" 
+                        Font-Bold="True" Font-Italic="False" ForeColor="#CC0000" Width="150px" 
+                        onclick="LinkButton5_Click" BackColor="#FFCCFF" 
+                        PostBackUrl="~/Result_log.aspx" BorderColor="#CC0000" BorderWidth="12px" 
+                        Font-Names="Arial Black" Font-Size="Large" Font-Underline="False">Results</asp:LinkButton>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style13" bgcolor="#FFCCFF">
+                    <asp:LinkButton ID="LinkButton6" runat="server" BorderStyle="Outset" 
+                        Font-Bold="True" Font-Italic="True" ForeColor="#CC0000" Width="150px" 
+                        BackColor="#FFCCFF" onclick="LinkButton6_Click" PostBackUrl="~/S.aspx" 
+                        BorderWidth="12px" Font-Names="Arial Black" Font-Size="Large" 
+                        Font-Underline="False" BorderColor="#990000">Site Map</asp:LinkButton>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style13" bgcolor="#CCFFCC">
+                    <asp:LinkButton ID="LinkButton7" runat="server" BorderStyle="Outset" 
+                        Font-Bold="True" Font-Italic="False" Font-Size="Large" ForeColor="#990000" 
+                        Width="150px" BackColor="#FFCCFF" onclick="LinkButton7_Click" 
+                        BorderColor="#CC0000" BorderWidth="12px" Font-Names="Arial Black" 
+                        Font-Underline="False">Recruitment 
+                    hints &amp; tips</asp:LinkButton>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style13" bgcolor="#FFCCFF">
+                    <asp:LinkButton ID="LinkButton8" runat="server" BorderStyle="Outset" 
+                        Font-Bold="True" Font-Italic="False" Font-Size="Large" ForeColor="#990000" 
+                        Width="150px" BackColor="#FFCCFF" onclick="LinkButton8_Click" 
+                        BorderColor="#CC0000" BorderWidth="12px" Font-Names="Arial Black" 
+                        Font-Underline="False">Accessbility 
+                    hints &amp; tips</asp:LinkButton>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style13" bgcolor="#CCFFCC">
+                    <asp:LinkButton ID="LinkButton9" runat="server" BorderStyle="Outset" 
+                        Font-Bold="True" Font-Italic="False" ForeColor="#990000" Width="150px" 
+                        BackColor="#FFCCFF" onclick="LinkButton9_Click" BorderColor="#CC0000" 
+                        BorderWidth="12px" Font-Names="Arial Black" Font-Size="Large" 
+                        Font-Strikeout="False" Font-Underline="False">Useful 
+                    Links</asp:LinkButton>
+                </td>
+            </tr>
+            <tr>
+                <td class="style13" bgcolor="#FFCCFF">
+                    </td>
+            </tr>
+            <tr>
+                <td class="style13" bgcolor="#CCFFCC">
+                    </td>
+            </tr>
+        </table>
+        </td>
+    
+    <td style="width:68%; height:510px " align="left" valign="top" bgcolor="#999966">
+        <br />
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            <p>
+                <br />
+            </p>
+            <p>
+                &nbsp;</p>
+        </asp:ContentPlaceHolder>
+                    
+        </td>
+    <td align="left" valign="top" bgcolor="#FFCCFF" class="style15">
+        <table cellpadding="4" class="style5">
+            <tr>
+                <td class="style14" bgcolor="#FFCCFF">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style14">
+                    <strong><span class="style14" style="font-size: large; font-style: normal">
+                    Recruitment                     <br />
+                    Hints &amp; Tips</span></strong></td>
+            </tr>
+            <tr>
+                <td align="left" class="style6" style="font-size: small; color: #0000FF;" 
+                    valign="top" bgcolor="#CCFFCC">
+                    <asp:ImageButton ID="ImageButton1" runat="server" Height="41px" 
+                        ImageUrl="~/images/free_1.gif" Width="100%" onclick="ImageButton1_Click" />
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td class="style14" bgcolor="#FFCCFF">
+                    Accessbility<br />
+                    Hints &amp; Tips</td>
+            </tr>
+            <tr>
+                <td align="left" class="style7" valign="top" bgcolor="#CCFFCC">
+                    <asp:ImageButton ID="ImageButton2" runat="server" 
+                        ImageUrl="~/images/firewrk3.gif" onclick="ImageButton2_Click" 
+                        Width="116px" />
+                </td>
+            </tr>
+            <tr>
+                <td align="left" class="style8" valign="top" bgcolor="#FFCCFF">
+                    <br />
+                    <asp:ImageButton ID="ImageButton4" runat="server" Height="65px" 
+                        ImageUrl="~/images/HRDaily_logo.gif" Width="120px" />
+                    <br />
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td class="style14" bgcolor="#CCFFCC">
+                    <asp:ImageButton ID="ImageButton5" runat="server" Height="69px" 
+                        ImageUrl="~/images/interviewup_logo.gif" Width="127px" />
+                </td>
+            </tr>
+            <tr>
+                <td class="style14" bgcolor="#FFCCFF">
+                    <asp:ImageButton ID="ImageButton6" runat="server" Height="65px" 
+                        ImageUrl="~/images/jobintree_logo.gif" Width="129px" />
+                </td>
+            </tr>
+            <tr>
+                <td class="style14" bgcolor="#CCFFCC">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style14" bgcolor="#FFCCFF">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style14" bgcolor="#CCFFCC">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style14" bgcolor="#FFCCFF">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style14" bgcolor="#CCFFCC">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style14" bgcolor="#FFCCFF">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style14" bgcolor="#CCFFCC">
+                    &nbsp;</td>
+            </tr>
+        </table>
+        <br />
+                </td>
+    </tr>
+   <%-- <<tr style="width:100%; height:600px; background-color:Silver;">
+    <td align="left" valign="top" bgcolor="#0080FF" class="style12">
+        &nbsp;</td>
+    
+    <td style="width:68%; height:510px " align="left" valign="top" bgcolor="#FF80C0">
+        &nbsp;</td>
+    <td style="width:18%; height:510px;" align="left" valign="top" bgcolor="#0080FF">
+        &nbsp;</td>
+    </tr>--%>
+    <tr style="width:100%; height:30px; background-color:Blue;">
+    <td colspan="3" style="height:30px;" bgcolor="#8080FF">&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:LinkButton ID="LinkButton10" runat="server" PostBackUrl="~/home.aspx">Home</asp:LinkButton>
+&nbsp;|
+        <asp:LinkButton ID="LinkButton11" runat="server" PostBackUrl="~/About us.aspx">About Us</asp:LinkButton>
+&nbsp;|
+        <asp:LinkButton ID="LinkButton12" runat="server" PostBackUrl="~/contactus.aspx">Contact Us</asp:LinkButton>
+&nbsp;|
+        <asp:LinkButton ID="LinkButton13" runat="server">Company</asp:LinkButton>
+                </td>
+    </tr>
+    </table>
+    </form>
+</body>
+</html>
